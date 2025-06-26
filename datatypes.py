@@ -483,4 +483,20 @@ if __name__ == "__main__":
     metricas = resultado.get('metricas_cuanticas', {})
     print(f"\n📈 Métricas Cuánticas:")
     print(f"  Fidelidad Promedio: {metricas.get('fidelidad_promedio', 0):.1%}")
-    print(f"  QBER: {metricas.get('qber
+    print(f"  QBER: ('qber(tasa de error):  {metricas.get('qber', 0):.1%}")
+    print(f"   • Estados decodificados: {metricas.get('estados_decodificados', 0)}")
+    print(f"   • Decoherencia detectada: {'Sí' if metricas.get('decoherencia_detectada', False) else 'No'}")
+    
+    print(f"\n⚙️  MÉTRICAS DEL SISTEMA:")
+    print(f"   • Ciclo de operación:    {sistema.get('ciclo', 0)}")
+    print(f"   • Temperatura:           {sistema.get('temperatura_mk', 0)} mK")
+    print(f"   • Tiempo coherencia T₂:  {sistema.get('tiempo_coherencia_t2', 0)} μs")
+    
+    if resultado.get('errores'):
+        print(f"\n⚠️  ERRORES Y ADVERTENCIAS:")
+        for error in resultado['errores']:
+            print(f"   • {error}")
+    
+    print("\n" + "=" * 80)
+    print("🎉 DEMOSTRACIÓN COMPLETADA")
+    print("=" * 80)
