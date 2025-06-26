@@ -8,7 +8,7 @@ Nuestro primer objetivo es sentar las bases. Crearemos la estructura de archivos
 
 ## 1.-Estructura del Proyecto
 
-### bimotype_v2/
+ bimotype_v2/
 ├── main.py                 # El punto de entrada que ejecutará la simulación.
 ├── core/
 │   ├── datatypes.py        # Todas las clases de datos (dataclasses) como EstadoQubit, Metricas, etc.
