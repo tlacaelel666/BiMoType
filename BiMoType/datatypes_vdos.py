@@ -1,4 +1,4 @@
-# bimotype_v2/core/datatypes.py
+# BiMoType/datatypes.py
 
 import numpy as np
 from typing import Dict, List, Union, Tuple, Optional, Any
