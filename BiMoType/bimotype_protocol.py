@@ -1,4 +1,4 @@
-# bimotype_v2/protocols/bimotype_protocol.py
+# bimotype_protocol.py
 
 import json
 import time
